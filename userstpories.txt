@@ -1,0 +1,7 @@
+En tant que user je peu m'inscrire
+En tant que user je peu me connecter
+En tant que user je peu parcourir les utilisateurs et liker ceux que je veux
+En tant que user si je like un user qui m'a déja liké, je match
+En tant que user je peu voir mes matchs
+En tant que user si je vais parcourir les utilisateurs je ne voit plus ceux que j'ai déja matché
+
