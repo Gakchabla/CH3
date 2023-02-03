@@ -48,9 +48,6 @@ export default function Home() {
                 Créer un compte
               </button>
             </NavLink>
-            <div>
-              <p className="font-gotham mb-2 font-semibold">A propos</p>
-            </div>
           </div>
         </div>
       )}
@@ -85,9 +82,6 @@ export default function Home() {
                 Créer un compte
               </button>
             </NavLink>
-            <div>
-              <p className="font-gotham mb-2 font-semibold">A propos</p>
-            </div>
           </div>
         </div>
       )}
@@ -123,9 +117,6 @@ export default function Home() {
                 Créer un compte
               </button>
             </NavLink>
-            <div>
-              <p className="font-gotham mb-2 font-semibold">A propos</p>
-            </div>
           </div>
         </div>
       )}
@@ -160,9 +151,6 @@ export default function Home() {
                 Créer un compte
               </button>
             </NavLink>
-            <div>
-              <p className="font-gotham mb-2 font-semibold">A propos</p>
-            </div>
           </div>
         </div>
       )}

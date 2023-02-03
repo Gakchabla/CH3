@@ -134,18 +134,20 @@ export default function UserProfile({ profile, index }) {
         </div>
       )}
       {visible && (
-        <div className={`absolute z-[${index}] bg-[#eeeeee]`}>
+        <div className={`absolute z-[${index}] bg-[#eeeeee] lg:h-screen`}>
           <div className="flex justify-center font-gothamTitle w-screen text-white">
             <div
               className={`${
-                viewInfos ? "w-full h-[60vh]" : "w-[95%] h-[65vh] rounded-3xl"
+                viewInfos
+                  ? "w-full h-[60vh] lg:rounded-l-3xl"
+                  : "w-[95%] h-[65vh] rounded-3xl"
               }  bg-slate-300 lg:shadow-xl max-w-md lg:w-[50vw] lg:max-w-[50vw]`}
             >
               <img
                 src={photo[0] ? photo[0].picture_url : ""}
                 alt="user"
                 className={`${
-                  viewInfos ? "" : "rounded-3xl"
+                  viewInfos ? "lg:rounded-l-3xl" : "rounded-3xl"
                 } h-full object-cover lg:w-[50%] lg:rounded-r-none`}
               />
               <div className="relative lg:absolute bottom-12 lg:top-2 lg:ml-[26vw] ml-2 text-3xl flex flex-wrap text-[#eeee] lg:text-black justify-between">
@@ -165,7 +167,7 @@ export default function UserProfile({ profile, index }) {
             </div>
           </div>
           {viewInfos && (
-            <div className="flex w-screen justify-center">
+            <div className="flex w-screen justify-center lg:hidden">
               <p className="text-black font-gotham text-lg w-[90%] max-w-md mt-4">
                 {profile.description}
               </p>

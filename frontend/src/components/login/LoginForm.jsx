@@ -70,7 +70,7 @@ export default function LoginForm() {
               className="bg-[#4a39b5] h-10 my-2 rounded-2xl pl-4"
             />
             {wrongCredentials && (
-              <p className="text-red-600">Mauvais identifiants!</p>
+              <p className="text-red-600"> Email ou Mot de passe incorrect!</p>
             )}
             <p>
               Pas encore inscrits?{" "}

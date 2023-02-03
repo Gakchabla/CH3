@@ -127,7 +127,7 @@ export default function MyProfile() {
         <img
           src={photo[0] ? photo[0].picture_url : ""}
           alt={user.firstname}
-          className="w-[90%]"
+          className="w-[90%] min-h-[50vh] object-contain"
         />
         <label
           htmlFor="upload-photo"
@@ -136,7 +136,7 @@ export default function MyProfile() {
           Changer de photo
         </label>
         <input
-          className="bg-opacity-0 absolute z-[-1]"
+          className="bg-opacity-0 absolute z-[-1] text-white hidden"
           id="upload-photo"
           type="file"
           name="photo"

@@ -86,7 +86,7 @@ router.put(
 
 // likes
 
-router.get("/api/likes", verifyToken, userControllers.browseLike);
+router.get("/api/likes", userControllers.browseLike);
 router.get("/api/match", verifyToken, userControllers.checkMatch);
 router.get("/api/getusermatches/:id", verifyToken, userControllers.getMatches);
 
