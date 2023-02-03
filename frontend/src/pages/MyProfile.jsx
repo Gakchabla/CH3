@@ -30,9 +30,16 @@ export default function MyProfile() {
       const formData = new FormData();
       formData.append("photo", inputRef.current.files[0]);
 
+      const config = { headers: myHeaders };
+
       const changePhoto = await axios.put(
         `${backURL}/api/photos/${user.id}`,
-        formData
+        formData,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
       );
     }
 
